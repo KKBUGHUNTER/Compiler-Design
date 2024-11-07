@@ -1,0 +1,5 @@
+yacc -d q.y
+lex q.l
+gcc lex.yy.c q.tab.c -o compiler
+./compiler
+
